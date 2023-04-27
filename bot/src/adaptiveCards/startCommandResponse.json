@@ -1,0 +1,50 @@
+{
+  "type": "AdaptiveCard",
+  "body": [
+    {
+      "type": "TextBlock",
+      "size": "Large",
+      "weight": "Bolder",
+      "text": "${title}",
+      "wrap": true
+    },
+    {
+      "type": "TextBlock",
+      "text": "${body}",
+      "wrap": true
+    },
+    {
+      "type": "TextBlock",
+      "text": "Як тебе звати?"
+    },
+    {
+      "type": "Input.Text",
+      "id": "defaultInputId",
+      "placeholder": "enter comment",
+      "maxLength": 500
+    },
+    {
+      "type": "Image",
+      "url": "https://adaptivecards.io/content/cats/1.png",
+      "altText": "Cat",
+      "height": "50px"
+    },
+    {
+      "type": "ActionSet",
+      "actions": [
+        {
+          "type": "Action.Execute",
+          "verb": "Yes",
+          "title": "Yes"
+        },
+        {
+          "type": "Action.Execute",
+          "verb": "No",
+          "title": "No"
+        }
+      ]
+    }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.4"
+}
