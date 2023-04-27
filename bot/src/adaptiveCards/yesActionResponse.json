@@ -11,6 +11,26 @@
       "type": "TextBlock",
       "text": "${body}",
       "wrap": true
+    },
+    {
+      "type": "TextBlock",
+      "text": "Як тебе звати?"
+    },
+    {
+      "type": "Input.Text",
+      "id": "defaultInputId",
+      "placeholder": "enter comment",
+      "maxLength": 500
+    },
+    {
+      "type": "ActionSet",
+      "actions": [
+        {
+          "type": "Action.Execute",
+          "verb": "Yes",
+          "title": "Yes"
+        }
+      ]
     }
   ],
   "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",

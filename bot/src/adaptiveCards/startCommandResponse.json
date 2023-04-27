@@ -14,16 +14,6 @@
       "wrap": true
     },
     {
-      "type": "TextBlock",
-      "text": "Як тебе звати?"
-    },
-    {
-      "type": "Input.Text",
-      "id": "defaultInputId",
-      "placeholder": "enter comment",
-      "maxLength": 500
-    },
-    {
       "type": "Image",
       "url": "https://adaptivecards.io/content/cats/1.png",
       "altText": "Cat",
