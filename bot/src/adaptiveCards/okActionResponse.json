@@ -14,7 +14,7 @@
     },
     {
       "type": "TextBlock",
-      "text": "Як тебе звати?"
+      "text": "Хто твій менеджер?"
     },
     {
       "type": "Input.Text",

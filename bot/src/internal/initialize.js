@@ -1,6 +1,7 @@
 const { BotBuilderCloudAdapter } = require("@microsoft/teamsfx");
 const ConversationBot = BotBuilderCloudAdapter.ConversationBot;
 const { YesActionHandler } = require("../cardActions/yesActionHandler");
+const { OkActionHandler } = require("../cardActions/okActionHandler");
 const { DoHiAction } = require("../cardActions/doHiAction");
 const { StartCommandHandler } = require("../commands/startCommandHandler");
 const { Hello } = require("../commands/Hello");
@@ -22,7 +23,7 @@ const conversationBot = new ConversationBot({
   },
   cardAction: {
     enabled: true,
-    actions: [new YesActionHandler(), new DoHiAction()],
+    actions: [new OkActionHandler(), new YesActionHandler(), new DoHiAction()],
   },
 });
 
